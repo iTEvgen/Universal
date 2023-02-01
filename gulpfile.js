@@ -1,7 +1,7 @@
 const gulp = require("gulp");
 const plumber = require("gulp-plumber");
 const sourcemap = require("gulp-sourcemaps");
-const sass = require("gulp-sass");
+const sass = require("gulp-sass")(require("sass"));
 const postcss = require("gulp-postcss");
 const autoprefixer = require("autoprefixer");
 const csso = require("postcss-csso");
@@ -13,14 +13,13 @@ const terser = require("gulp-terser");
 const imagemin = require("gulp-imagemin");
 const webp = require("gulp-webp");
 const svgstore = require("gulp-svgstore");
-const del = require("del");
+const dele = require ("del");
 const sync = require("browser-sync").create();
 
 // Styles
 
 const styles = () => {
   return gulp.src("source/sass/style.scss")
-    .pipe(plumber())
     .pipe(sourcemap.init())
     .pipe(sass())
     .pipe(postcss([
@@ -124,7 +123,7 @@ exports.copy = copy;
 // Clean
 
 const clean = () => {
-  return del("build");
+  return dele("build");
 };
 
 exports.clean = clean

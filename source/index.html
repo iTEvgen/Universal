@@ -11,10 +11,96 @@
   <link rel="manifest" href="universal.webmanifest">
 </head>
 <body>
-  <header>0</header>
+  <header class="site-header">
+    <div class="container">
+      <div class="site-header__user user-nav">
+        <div class="user-nav__sections sections-user">
+          <a class="sections-user__link" href="">Sections</a>
+        </div>
+        <form class="user-nav__search search-site" method="get">
+          <button class="search-site__button" type="button"><span>Поиск по сайту</span></button>
+          <input class="search-site__search" type="text" name="search" placeholder="Search">
+        </form>
+        <div class="user-nav__subscribe subscribe-user">
+          <a class="subscribe-user__link" href="">
+            <picture>
+              <source type="image/webp" srcset="img/subscribe-now@1x.webp 1x, img/subscribe-now@2x.webp 2x">
+              <img class="subscribe-user__image" src="img/subscribe-now@1x.jpg" srcset="img/subscribe-now@2x.jpg 2x" width="66" height="44" alt="">
+            </picture>
+            <p class="subscribe-user__title">Subscribe Now</p>
+            <p class="subscribe-user__price">3 month for $19</p>
+          </a>
+        </div>
+        <ul class="user-nav__authorization authorization">
+          <li class="authorization__item">
+            <a class="authorization__link" href="">Sing In</a>
+          </li>
+        </ul>
+      </div>
+      <div class="site-header__widget user-widget">
+        <div class="user-widget__desc description">
+          <picture>
+            <source type="image/webp" srcset="img/liberty@1x.webp 1x, img/liberty@2x.webp 2x">
+            <img class="description__img" src="img/liberty@1x.png" srcset="img/liberty@1x.png 2x" width="100" height="84" alt="">
+          </picture>
+          <p class="description__text">Boston and New York Bear Brunt</p>
+        </div>
+        <div class="user-widget__logo logo-site">
+          <a class="logo-site__link" href="">
+            <svg class="logo-site__img" aria-hidden="true" focusable="false" width="184" height="40">
+              <use xlink:href="img/sprite.svg#icon-logo"></use>
+            </svg>
+          </a>
+        </div>
+        <div class="user-widget__widget widget-site">
+          <time class="widget-site__time">Monday, January 1, 2018</time>
+          <p class="widget-site__weather">- 23 °C</p>
+        </div>
+      </div>
+    </div>
+    <nav class="site-header__nav site-nav">
+      <div class="container">
+        <ul class="site-nav__list">
+          <li class="site-nav__item">
+            <a class="site-nav__link" href="#!">News</a>
+          </li>
+          <li class="site-nav__item">
+            <a class="site-nav__link" href="">Opinion</a>
+          </li>
+          <li class="site-nav__item">
+            <a class="site-nav__link" href="">Science</a>
+          </li>
+          <li class="site-nav__item">
+            <a class="site-nav__link" href="">Life</a>
+          </li>
+          <li class="site-nav__item">
+            <a class="site-nav__link" href="">Travel</a>
+          </li>
+          <li class="site-nav__item">
+            <a class="site-nav__link" href="">Moneys</a>
+          </li>
+          <li class="site-nav__item">
+            <a class="site-nav__link" href="">Art & Design</a>
+          </li>
+          <li class="site-nav__item">
+            <a class="site-nav__link" href="">Sports</a>
+          </li>
+          <li class="site-nav__item">
+            <a class="site-nav__link" href="">People</a>
+          </li>
+          <li class="site-nav__item">
+            <a class="site-nav__link" href="">Health</a>
+          </li>
+          <li class="site-nav__item">
+            <a class="site-nav__link" href="">Education</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
   <main>
     <h1>Main page of the news site Universal</h1>
   </main>
-  <footer>3</footer>
+  <footer></footer>
 </body>
 </html>

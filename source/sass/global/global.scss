@@ -6,6 +6,9 @@ body {
   display: grid;
   grid-template-rows: min-content 1fr min-content;
   min-height: 100%;
+  font-family: "Lato", "Georgia", serif;
+  font-size: 14px;
+  line-height: 20px;
   word-wrap: break-word;
   color: var(--basic-black);
   background-color: var(--basic-white);
@@ -29,6 +32,12 @@ input[type="radio"].visually-hidden {
 img {
   max-width: 100%;
   height: auto;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 30px;
+  width: 1200px;
 }
 
 .button {

@@ -18,46 +18,50 @@
           <a class="sections-user__link" href="">Sections</a>
         </div>
         <form class="user-nav__search search-site" method="get">
-          <button class="search-site__button" type="button"><span>Поиск по сайту</span></button>
           <input class="search-site__search" type="search" name="search" placeholder="Search">
+          <button class="search-site__button button" type="button"><span class="visually-hidden">Поиск по сайту</span></button>
         </form>
         <div class="user-nav__subscribe subscribe-user">
           <a class="subscribe-user__link" href="#!">
-            <picture>
-              <source type="image/webp" srcset="img/subscribe-now@1x.webp 1x, img/subscribe-now@2x.webp 2x">
-              <img class="subscribe-user__image" src="img/subscribe-now@1x.jpg" srcset="img/subscribe-now@2x.jpg 2x" width="66" height="44" alt="">
-            </picture>
-            <p class="subscrible-user__text-box">
-              <span></span>
-            </p>
-            <p class="subscribe-user__title">Subscribe Now</p>
-            <p class="subscribe-user__price">3 month for $19</p>
+            <figure class="subscribe-user__box-img">
+              <picture>
+                <source type="image/webp" srcset="img/subscribe-now@1x.webp 1x, img/subscribe-now@2x.webp 2x">
+                <img class="subscribe-user__img" src="img/subscribe-now@1x.jpg" srcset="img/subscribe-now@2x.jpg 2x" width="66" height="44" alt="">
+              </picture>
+            </figure>
+            <div class="subscribe-user__text-box">
+              <p class="subscribe-user__title">Subscribe Now</p>
+              <p class="subscribe-user__price">3 month for $19</p>
+            </div>
           </a>
         </div>
         <ul class="user-nav__authorization authorization">
           <li class="authorization__item">
-            <a class="authorization__link" href="">Sing In</a>
+            <a class="authorization__link" href="">Sign In</a>
           </li>
         </ul>
       </div>
       <div class="site-header__widget user-widget">
         <div class="user-widget__desc description">
-          <picture>
-            <source type="image/webp" srcset="img/liberty@1x.webp 1x, img/liberty@2x.webp 2x">
-            <img class="description__img" src="img/liberty@1x.png" srcset="img/liberty@1x.png 2x" width="100" height="84" alt="">
-          </picture>
+          <figure class="description__box-img">
+            <picture>
+              <source type="image/webp" srcset="img/liberty@1x.webp 1x, img/liberty@2x.webp 2x">
+              <img class="description__img" src="img/liberty@1x.png" srcset="img/liberty@1x.png 2x" width="100" height="84" alt="">
+            </picture>
+          </figure>
           <p class="description__text">Boston and New York Bear Brunt</p>
         </div>
         <div class="user-widget__logo logo-site">
           <a class="logo-site__link" href="">
-            <svg class="logo-site__img" aria-hidden="true" focusable="false" width="184" height="40">
+            <!-- <svg class="logo-site__img" aria-hidden="true" focusable="false" width="184" height="40">
               <use xlink:href="img/sprite.svg#icon-logo"></use>
-            </svg>
+            </svg> -->
+            <img class="logo-site__img" src="img/header-logo.svg" width="184" height="40" alt="">
           </a>
         </div>
         <div class="user-widget__widget widget-site">
           <time class="widget-site__time" datetime="2018-01-01">Monday, January 1, 2018</time>
-          <p class="widget-site__weather">- 23 °C</p>
+          <span class="widget-site__weather">- 23 °C</span>
         </div>
       </div>
     </div>

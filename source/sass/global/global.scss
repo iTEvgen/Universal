@@ -37,19 +37,17 @@ img {
 .container {
   margin: 0 auto;
   padding: 0 30px;
-  width: 1200px;
+  width: 1140px;
 }
 
 .button {
-  padding-top: 10px;
-  padding-bottom: 9px;
   text-align: center;
   vertical-align: middle;
   text-transform: uppercase;
   text-decoration: none;
-  color: var(--basic-white);
+  color: inherit;
   border: none;
   cursor: pointer;
-  background-color: var(--basic-black);
+  background-color: var(--transparent);
   box-sizing: border-box;
 }

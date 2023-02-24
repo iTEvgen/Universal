@@ -9,6 +9,7 @@ body {
   font-family: "Lato", "Georgia", serif;
   font-size: 14px;
   line-height: 20px;
+  font-weight: 400;
   word-wrap: break-word;
   color: var(--basic-black);
   background-color: var(--basic-white);
@@ -50,4 +51,19 @@ img {
   cursor: pointer;
   background-color: var(--transparent);
   box-sizing: border-box;
+}
+
+.site-main {
+  padding-top: 30px;
+  background-image: linear-gradient(to bottom, var(--basic-black--600) 475px, var(--basic-grey--100) 475px);
+}
+
+*{
+  outline-offset: -1px;
+}
+
+.site-main__box {
+  display: grid;
+  grid-template-columns: 1fr 263px;
+  column-gap: 30px;
 }

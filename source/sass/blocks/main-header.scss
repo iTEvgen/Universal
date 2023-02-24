@@ -5,7 +5,7 @@
   display: grid;
   grid-template-columns: min-content 1fr auto min-content;
   min-height: 51px;
-  border-bottom: 1px solid var(--basic-grey--100);
+  border-bottom: 1px solid var(--basic-grey--300);
   box-sizing: border-box;
 }
 
@@ -44,7 +44,7 @@
   width: 100%;
   padding: 17px 15px 17px 54px;
   border: none;
-  border-left: 1px solid var(--basic-grey--100);
+  border-left: 1px solid var(--basic-grey--300);
 }
 
 //subscribe-user
@@ -82,7 +82,7 @@
 }
 
 .subscribe-user__price {
-  color: var(--basic-grey--200);
+  color: var(--basic-grey--500);
 }
 
 //authorization

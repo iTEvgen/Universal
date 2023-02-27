@@ -24,9 +24,6 @@
   &--img {
     grid-area: img;
     padding: 0;
-  }
-
-  &--img {
     font-family: "Roboto Slab", "Georgia", serif;
     font-size: 16px;
     line-height: 25px;
@@ -291,6 +288,7 @@
 }
 
 .article-text__heading {
+  font-family: "Roboto Slab", "Georgia", serif;
   margin: 0;
   margin-bottom: 5px;
   font-size: 16px;

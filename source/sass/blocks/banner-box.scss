@@ -1,0 +1,54 @@
+.banner-box {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 52px;
+  min-height: 270px;
+  box-sizing: border-box;
+}
+
+.banner__image-box {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  margin: 0;
+}
+
+.banner__img {
+  object-fit: cover;
+}
+
+.banner__text {
+  width: 946px;
+  margin: 0;
+  margin-bottom: 23px;
+  font-family: "Roboto Slab", "Georgia", serif;
+  font-size: 40px;
+  line-height: 50px;
+  text-align: center;
+  color: var(--basic-white);
+  z-index: 2;
+}
+
+.banner__link {
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+  min-width: 0;
+  padding: 10px 24px 10px;
+  word-wrap: break-word;
+  color: var(--basic-white);
+  background-color: var(--basic-blue);
+  border-radius: 20px;
+  text-decoration: none;
+  z-index: 2;
+}
+
+.banner__icon {
+  flex:none;
+  width: 15px;
+}

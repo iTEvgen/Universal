@@ -1,0 +1,116 @@
+.sidebar-columns {
+  background-color: var(--basic-cadetblue);
+  border-radius: 10px;
+}
+
+.sidebar-columns__box-header {
+  padding: 20px 26px 19px ;
+  border-bottom: 1px solid var(--basic-cadetblue--100);
+}
+
+.sidebar-columns__header {
+  margin: 0;
+  font-size: 14px;
+  letter-spacing: 0.5px;
+  color: var(--basic-white);
+  text-transform: uppercase;
+}
+
+.sidebar-columns__comment {
+  margin: 0;
+
+}
+
+.sidebar-columns__list {
+  margin: 0;
+  padding: 0 24px 0 27px;
+  list-style: none;
+}
+
+.sidebar-columns__item {
+  &:not(:last-child) {
+    border-bottom: 1px solid var(--basic-cadetblue--050);
+  }
+}
+
+//column-comment
+.column-comment {
+  position: relative;
+  padding: 45px 8px 39px 8px;
+  box-sizing: border-box;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 35px;
+    left: -1px;
+    width: 40px;
+    height: 40px;
+    background-image: url(../img/content/icon-quote.svg);
+  }
+}
+
+.sidebar-columns__item:last-child {
+  .column-comment {
+    padding-bottom: 44px;
+  }
+}
+
+.column-comment__link {
+  display: grid;
+  grid-template-columns: 45px auto;
+  grid-template-rows: repeat(2, min-content);
+  align-items: center;
+  column-gap: 10px;
+  row-gap: 15px;
+  text-decoration: none;
+}
+
+.column-comment__avatar {
+  margin: 0;
+
+  img {
+    display: block;
+    border-radius: 50%;
+  }
+}
+
+.column-comment__name-box {
+  display: flex;
+  flex-direction: column;
+  color: var(--basic-cadetblue--050);
+}
+
+.column-comment__name {
+  font-style: normal;
+}
+
+.column-comment__caption {
+  font-size: 12px;
+  line-height: 15px;
+}
+
+.column-comment__text {
+  grid-column: 1 / 3;
+  grid-row: 1 / 2;
+  margin: 0;
+  font-family: "Roboto Slab", "Georgia", serif;
+  font-size: 20px;
+  line-height: 25px;
+  color: var(--basic-white);
+  z-index: 3;
+}
+
+.sidebar-columns__box-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: 1px solid var(--basic-cadetblue--050);
+  box-sizing: border-box;
+}
+
+.sidebar-columns__button {
+  padding: 10px 15px 12px;
+  color: var(--basic-white);
+  text-decoration: none;
+}

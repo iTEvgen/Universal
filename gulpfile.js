@@ -188,4 +188,4 @@ exports.default = gulp.series(
   gulp.series(
     server,
     watcher
- ));
+  ));

@@ -1,8 +1,143 @@
+.popular-topics__list {
+  margin: 0;
+  padding: 25px;
+  background-color: var(--basic-white);
+  list-style: none;
+  border-radius: 10px;
+
+  li:not(:first-child) {
+    padding-top: 25px;
+  }
+
+  li:not(:last-child) {
+    padding-bottom: 24px;
+    border-bottom: 1px solid var(--basic-grey--300);
+  }
+}
+
+.popular-topics__item {
+  &:first-child {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+
+  &:last-child {
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+}
+
+//topic-article
+.topic-article {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-template-rows: repeat(2, min-content);
+  grid-template-areas: "img subtitle" "img text" "img .";
+  column-gap: 25px;
+}
+
+//topic-article__title-box
+.topic-article__title-box {
+  grid-area: subtitle;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: 11px;
+}
+
+.topic-article__title {
+  margin: 0;
+
+  &--mdfElem0 {
+    color: var(--basic-blue);
+  }
+
+  &--mdfElem1 {
+    color: var(--basic-aqua);
+  }
+
+  &--mdfElem2 {
+    color: var(--basic-red);
+  }
+
+  &--mdfElem3 {
+    color: var(--basic-violet);
+  }
+}
+
+.topic-article__title-link {
+  font-size: 12px;
+  line-height: 15px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  color: inherit;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
 .topic-article__add-bookmark {
   border: none;
+  background-color: var(--transparent);
   cursor: pointer;
 }
 
 .topic-article__icon-book {
   fill: var(--basic-grey--400);
+}
+
+.topic-article__add-bookmark--active > .topic-article__icon-book {
+  fill: var(--basic-red--100);
+}
+
+//topic-article__image-link
+.topic-article__image-link {
+  grid-area: img;
+}
+
+.topic-article__img {
+  display: block;
+}
+
+//topic-article__text-link
+.topic-article__text-link {
+  grid-area: text;
+  text-decoration: none;
+}
+
+.topic-article__heading {
+  margin: 0 0 11px;
+  padding-right: 30px;
+  font-family: "Roboto Slab", "Georgia", serif;
+  font-size: 20px;
+  line-height: 25px;
+  font-weight: 600;
+  color: var(--basic-black--600);
+}
+
+.topic-article__text {
+  min-height: 60px;
+  margin: 0 0 19px;
+  color: var(--basic-black--500);
+}
+
+.topic-article__meta-box {
+  display: flex;
+  column-gap: 11px;
+  font-size: 12px;
+  line-height: 15px;
+  color: var(--basic-grey--500);
+}
+
+.topic-article__comment {
+  padding-left: 20px;
+  background-image: url("../img/content/icon-comment.svg");
+  background-repeat: no-repeat;
+  background-position: 0 center;
+}
+
+.topic-article__like {
+  padding-left: 20px;
+  background-image: url("../img/content/icon-heart.svg");
+  background-repeat: no-repeat;
+  background-position: 0 center;
 }

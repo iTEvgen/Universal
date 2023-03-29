@@ -17,7 +17,7 @@
   font-weight: 700;
   text-align: center;
   color: var(--basic-black--600);
-  background-image: url(../img/icon-hamburger.svg);
+  background-image: url("../img/icon-hamburger.svg");
   background-repeat: no-repeat;
   background-position: 1px 50%;
   text-decoration: none;
@@ -35,7 +35,7 @@
   left: 18px;
   width: 36px;
   height: 36px;
-  background-image: url(../img/icon-search.svg);
+  background-image: url("../img/icon-search.svg");
   background-repeat: no-repeat;
   background-position: 50%;
 }
@@ -101,7 +101,7 @@
   color: var(--basis-black--500);
   text-decoration: none;
   box-sizing: border-box;
-  background-image: url(../img/icon-man.svg);
+  background-image: url("../img/icon-man.svg");
   background-repeat: no-repeat;
   background-position: 26px 50%;
 }
@@ -154,7 +154,7 @@
   padding-left: 45px;
   text-align: right;
   box-sizing: border-box;
-  background-image: url(../img/icon-sun.svg);
+  background-image: url("../img/icon-sun.svg");
   background-repeat: no-repeat;
   background-position: 24px;
 }

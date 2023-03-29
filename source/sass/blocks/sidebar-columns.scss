@@ -4,7 +4,7 @@
 }
 
 .sidebar-columns__box-header {
-  padding: 20px 26px 19px ;
+  padding: 20px 26px 19px;
   border-bottom: 1px solid var(--basic-cadetblue--100);
 }
 
@@ -18,7 +18,6 @@
 
 .sidebar-columns__comment {
   margin: 0;
-
 }
 
 .sidebar-columns__list {
@@ -46,7 +45,7 @@
     left: -1px;
     width: 40px;
     height: 40px;
-    background-image: url(../img/content/icon-quote.svg);
+    background-image: url("../img/content/icon-quote.svg");
   }
 }
 

@@ -16,7 +16,6 @@
 }
 
 .popular-topics__item {
-
   &:first-child {
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
@@ -33,10 +32,7 @@
   display: grid;
   grid-template-columns: auto 1fr;
   grid-template-rows: repeat(2, min-content);
-  grid-template-areas:
-  "img subtitle"
-  "img text"
-  "img .";
+  grid-template-areas: "img subtitle" "img text" "img .";
   column-gap: 25px;
 }
 
@@ -115,7 +111,7 @@
   font-size: 20px;
   line-height: 25px;
   font-weight: 600;
-  color: var(--basic-black--600)
+  color: var(--basic-black--600);
 }
 
 .topic-article__text {
@@ -134,14 +130,14 @@
 
 .topic-article__comment {
   padding-left: 20px;
-  background-image: url(../img/content/icon-comment.svg);
+  background-image: url("../img/content/icon-comment.svg");
   background-repeat: no-repeat;
   background-position: 0 center;
 }
 
 .topic-article__like {
   padding-left: 20px;
-  background-image: url(../img/content/icon-heart.svg);
+  background-image: url("../img/content/icon-heart.svg");
   background-repeat: no-repeat;
   background-position: 0 center;
 }

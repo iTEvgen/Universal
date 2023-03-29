@@ -37,11 +37,11 @@
 
   &::before {
     position: absolute;
-    content:  counter(list-number);
+    content: counter(list-number);
     top: 3px;
     font-size: 70px;
     line-height: 50px;
-    font-weight: bold;
+    font-weight: 700;
     color: var(--basic-black--600);
     opacity: 0.08;
   }
@@ -62,7 +62,7 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;
-  color: var( --basic-black--500);
+  color: var(--basic-black--500);
 }
 
 .topic-you__time {

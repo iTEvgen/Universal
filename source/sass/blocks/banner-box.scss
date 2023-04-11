@@ -17,11 +17,16 @@
   bottom: 0;
   display: flex;
   margin: 0;
+
+  * {
+    width: 100%;
+    height: 270px;
+  }
 }
 
 .banner__img {
-  width: 100%;
-  object-fit: cover;
+  display: block;
+  object-fit: contain;
 }
 
 .banner__text {

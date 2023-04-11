@@ -107,6 +107,7 @@
   </header>
   <main class="site-main">
     <h1 class="visually-hidden">Main page of the news site Universal</h1>
+
     <div class="container">
       <section class="site-main__top-posts top-posts">
         <h2 class="top-posts__headers visually-hidden">Top posts</h2>
@@ -427,9 +428,13 @@
         </div>
       </div>
     </div>
+
     <div class="site-main__banner banner-box">
       <figure class="banner__image-box">
-        <img class="banner__img" src="img/content/banner-index@1x.jpg" height="270" alt="">
+        <picture>
+          <source type="image/webp" srcset="img/content/banner-index@1x.webp 1x, img/content/banner-index@2x.webp 2x">
+          <img class="banner__img" src="img/content/banner-index@1x.jpg" srcset="img/content/banner-index@2x.jpg 2x" height="270" alt="">
+        </picture>
       </figure>
       <p class="banner__text">The Big Bloom or «How Flowering<br> Plants Changed the World»</p>
       <a class="banner__link" href="#!">
@@ -739,6 +744,79 @@
         </div>
       </div>
     </div>
+
+    <div class="site-main__from-editorship">
+      <div class="from-editorship container">
+        <div class="from-editorship__list editorship-slider">
+
+          <div class="from-editorship__item from-editorship__item--mdfElem1  editorship-slider__item">
+
+            <a class="from-editorship__link editorship-author" href="#!">
+              <figure class="from-editorship__box-img">
+                <picture>
+                  <source type="image/webp" srcset="img/content/avatar-user/avatar-img-sarah@1x.webp 1x, img/content/avatar-user/avatar-img-sarah@2x.webp 2x">
+                  <img class="editorship-author" src="img/content/avatar-user/avatar-img-sarah@1x.png" srcset="img/content/avatar-user/avatar-img-sarah@2x.png 2x" width="45" height="45" alt="">
+                </picture>
+              </figure>
+
+              <div class="editorship-author__text-box">
+                <p class="editorship-author__name">By Sarah Jenkins</p>
+                <small class="editorship-author__caption">Photographer</small>
+              </div>
+            </a>
+
+            <div class="from-editorship__title-box">
+              <h2 class="from-editorship__title">Readers' Choice winners: Your wine country favorites</h2>
+            </div>
+
+            <button class="from-editorship__button" type="button">
+              <svg class="from-editorship__icon" aria-hidden="true" focusable="false" width="20" height="20">
+                <use xlink:href="#icon-images"></use>
+              </svg>
+              <span>Watch photos</span>
+              <span>26</span>
+            </button>
+
+          </div>
+
+          <div class="from-editorship__toggles editorship-slider__toggles">
+            <button class="from-editorship__toggle editorship-slider__toggle" type="button" aria-label="Первый слайд"></button>
+            <button class="from-editorship__toggle from-editorship__toggle--current editorship-slider__toggle" type="button" aria-label="Второй слайд"></button>
+            <button class="from-editorship__toggle editorship-slider__toggle" type="button" aria-label="Третий слайд"></button>
+            <button class="from-editorship__toggle editorship-slider__toggle" type="button" aria-label="Четвертый слайд"></button>
+            <button class="from-editorship__toggle editorship-slider__toggle" type="button" aria-label="Пятый слайд"></button>
+          </div>
+
+        </div>
+
+        <article class="from-editorship__article editorship-article from-editorship__article--top">
+          <a class="editorship-article__title-box" href="#!">
+            <h3 class="editorship-article__title">Careers</h3>
+          </a>
+          <h2 class="editorship-article__header editorship-article__header--mdfElem1">Had a Job Interview but No Callback? Here&rsquo;s What to Do</h2>
+          <p class="editorship-article__text editorship-article__text--mdfElem1">Try to understand the culture of<br> the company where you want to<br> work and be authentic in your<br> interview, experts emphasize</p>
+          <button class="editorship-article__button" type="button">Read more</button>
+        </article>
+
+        <article class="from-editorship__article editorship-article from-editorship__article--text">
+          <a class="editorship-article__link" href="#!">
+            <h2 class="editorship-article__header">Is Coffee Bad for Bones?</h2>
+            <p class="editorship-article__text">Coffee drinkers may excrete more calcium, but it doesn&rsquo;t appear to weaken bones</p>
+            <time class="editorship-article__time">Oct 15</time>
+          </a>
+        </article>
+
+        <article class="from-editorship__article editorship-article from-editorship__article--text">
+          <a class="editorship-article__link" href="#!">
+            <h2 class="editorship-article__header">What We Manufacture</h2>
+            <p class="editorship-article__text">A global history of the factory and the modern world that all should read</p>
+            <time class="editorship-article__time">Oct 14</time>
+          </a>
+        </article>
+
+      </div>
+    </div>
+
   </main>
   <footer></footer>
 </body>

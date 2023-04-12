@@ -1,0 +1,188 @@
+.site-footer {
+  background-color: var(--basic-white);
+}
+
+//site-footer__form
+.site-footer__form {
+  padding-top: 61px;
+  padding-bottom: 70px;
+}
+
+.footer-form__grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0;
+}
+
+.footer-form__label {
+  flex-basis: 100%;
+  margin-bottom: 24px;
+  font-family: "Roboto Slab", "Georgia", serif;
+  font-size: 40px;
+  line-height: 50px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.footer-form__input {
+  width: 313px;
+  height: 40px;
+  margin-right: 10px;
+  padding: 10px 15px;
+  border: 1px solid var(--basic-grey--300);
+  box-sizing: border-box;
+}
+
+.footer-form__button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 119px;
+  height: 40px;
+  line-height: 20px;
+  color: var(--basic-white);
+  background-color: var(--basic-blue);
+  border: none;
+  border-radius: 20px;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+//site-footer__navigation
+.footer-nav__list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  border-top: 5px solid;
+  border-image: linear-gradient(to right, var(--basic-red), var(--basic-red) 190px, var(--basic-violet) 190px, var(--basic-violet) 380px, var(--basic-blue) 380px, var(--basic-blue) 570px, var(--basic-orange) 570px, var(--basic-orange) 760px, var(--basic-aquamarine) 760px, var(--basic-aquamarine) 950px, var(--basic-cadetblue) 950px);
+  border-image-slice: 1;
+  box-sizing: border-box;
+}
+
+.footer-nav__item {
+  flex-basis: 190px;
+  padding-top: 35px;
+  padding-bottom: 49px;
+}
+
+.footer-nav__title {
+  margin: 0;
+  margin-bottom: 15px;
+  font-size: 14px;
+  color: var(--basic-black--600);
+}
+
+.footer-nav__inner-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.footer-nav__inner-link {
+  display: inline-block;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  color: var(--basic-black--500);
+  text-decoration: none;
+}
+
+//.site-footer__contact-us
+.site-footer__contact-us {
+  margin-bottom: 26px;
+  padding-top: 30px;
+  padding-bottom: 29px;
+  border-top: 1px solid var(--basic-grey--300);
+  border-bottom: 1px solid var(--basic-grey--300);
+}
+
+.contact-us {
+  display: flex;
+  align-items: flex-start;
+}
+
+//contact-us__advertise
+.advertise {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  max-width: 580px;
+  column-gap: 31px;
+  row-gap: 20px;
+  margin-right: auto;
+}
+
+.advertise__link {
+  color: var(--basic-black--600);
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.advertise__icon {
+  display: block;
+}
+
+.contact-us__social {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.social {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  max-width: 210px;
+  min-height: 50px;
+  column-gap: 15px;
+  row-gap: 10px;
+}
+
+.social__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  box-sizing: border-box;
+
+  &--fbColor {
+    background-color: var(--basic-blue--600);
+  }
+
+  &--twColor {
+    background-color: var(--basic-blue--100);
+  }
+
+  &--ytbColor {
+    background-color: var(--basic-red-050);
+  }
+
+  &--instColor {
+    background-color: var(--basic-black--800);
+  }
+}
+
+//site-footer__copyright
+.site-footer__copyright {
+  margin-bottom: 26px;
+}
+
+.copyright {
+  display: flex;
+  color: var(--basic-grey--500);
+}
+
+.copyright__text {
+  max-width: 750px;
+  margin-right: auto;
+}
+
+.copyright__copy {
+  max-width: 200px;
+}

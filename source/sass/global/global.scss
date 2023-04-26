@@ -39,6 +39,10 @@ img {
   margin: 0 auto;
   padding: 0 30px;
   width: 1140px;
+
+  &--article {
+    width: 942px;
+  }
 }
 
 .button {
@@ -56,6 +60,11 @@ img {
 .site-main {
   padding-top: 30px;
   background-image: linear-gradient(to bottom, var(--basic-black--600) 475px, var(--basic-grey--100) 475px);
+
+  &--article {
+    padding-top: 0;
+    background-image: none;
+  }
 }
 
 * {

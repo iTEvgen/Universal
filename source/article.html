@@ -11,10 +11,410 @@
   <link rel="manifest" href="universal.webmanifest">
 </head>
 <body>
-  <header>0</header>
-  <main>
-    <h1>Main page of the news site Universal</h1>
+  <div style="display: none;">
+    <include src="build/img/sprite.svg"></include>
+  </div>
+
+  <header class="site-header">
+    <div class="container">
+      <div class="site-header__user user-nav">
+        <div class="user-nav__sections sections-user">
+          <a class="sections-user__link" href="#!">Sections</a>
+        </div>
+        <form class="user-nav__search search-site" method="get">
+          <input class="search-site__search" type="search" name="search" placeholder="Search">
+          <button class="search-site__button button" type="button"><span class="visually-hidden">Поиск по сайту</span></button>
+        </form>
+        <div class="user-nav__subscribe subscribe-user">
+          <a class="subscribe-user__link" href="#!">
+            <figure class="subscribe-user__box-img">
+              <picture>
+                <source type="image/webp" srcset="img/subscribe-now@1x.webp 1x, img/subscribe-now@2x.webp 2x">
+                <img class="subscribe-user__img" src="img/subscribe-now@1x.jpg" srcset="img/subscribe-now@2x.jpg 2x" width="66" height="44" alt="">
+              </picture>
+            </figure>
+            <div class="subscribe-user__text-link">
+              <p class="subscribe-user__title">Subscribe Now</p>
+              <p class="subscribe-user__price">3 month for $19</p>
+            </div>
+          </a>
+        </div>
+        <ul class="user-nav__authorization authorization">
+          <li class="authorization__item">
+            <a class="authorization__link" href="#!">Sign In</a>
+          </li>
+        </ul>
+      </div>
+      <div class="site-header__widget user-widget">
+        <div class="user-widget__desc description">
+          <figure class="description__box-img">
+            <picture>
+              <source type="image/webp" srcset="img/liberty@1x.webp 1x, img/liberty@2x.webp 2x">
+              <img class="description__img" src="img/liberty@1x.png" srcset="img/liberty@1x.png 2x" width="100" height="84" alt="">
+            </picture>
+          </figure>
+          <p class="description__text">Boston and New York Bear Brunt</p>
+        </div>
+        <div class="user-widget__logo logo-site">
+          <a class="logo-site__link" href="index.html">
+            <img class="logo-site__img" src="img/header-logo.svg" width="184" height="40" alt="">
+          </a>
+        </div>
+        <div class="user-widget__widget widget-site">
+          <time class="widget-site__time" datetime="2018-01-01">Monday, January 1, 2018</time>
+          <span class="widget-site__weather">- 23 °C</span>
+        </div>
+      </div>
+    </div>
+    <nav class="site-header__nav site-nav">
+      <div class="container">
+        <ul class="site-nav__list">
+          <li class="site-nav__item">
+            <a class="site-nav__link">News</a>
+          </li>
+          <li class="site-nav__item">
+            <a class="site-nav__link" href="#!">Opinion</a>
+          </li>
+          <li class="site-nav__item">
+            <a class="site-nav__link" href="#!">Science</a>
+          </li>
+          <li class="site-nav__item">
+            <a class="site-nav__link" href="#!">Life</a>
+          </li>
+          <li class="site-nav__item">
+            <a class="site-nav__link" href="#!">Travel</a>
+          </li>
+          <li class="site-nav__item">
+            <a class="site-nav__link" href="#!">Moneys</a>
+          </li>
+          <li class="site-nav__item">
+            <a class="site-nav__link" href="#!">Art & Design</a>
+          </li>
+          <li class="site-nav__item">
+            <a class="site-nav__link" href="#!">Sports</a>
+          </li>
+          <li class="site-nav__item">
+            <a class="site-nav__link" href="#!">People</a>
+          </li>
+          <li class="site-nav__item">
+            <a class="site-nav__link" href="#!">Health</a>
+          </li>
+          <li class="site-nav__item">
+            <a class="site-nav__link" href="#!">Education</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main class="site-main site-main--article article-content">
+    <article class="article-content__content">
+      <div class=" article-content__header">
+        <div class="header-article container container--article">
+          <div class="header-article__navigation article-navigation">
+
+            <h1 class="article-navigation__title">
+              <a href="">Destinations</a>
+            </h1>
+
+            <div class="article-navigation__navigation">
+              <a class="article-navigation__link article-navigation__link--back-main" href="index.html">Back to main</a>
+              <a class="article-navigation__link article-navigation__link--prev" href="">Prev</a>
+              <a class="article-navigation__link article-navigation__link--next" href="">Next</a>
+            </div>
+
+          </div>
+
+          <h2 class="header-article__heading">
+            <svg class="header-article__heading-icon" aria-hidden="true" focusable="false" width="26px" height="27px">
+              <use xlink:href="#icon-bookmark"></use>
+            </svg>
+            Five Travel Stories From<br> 2017 to Help You Escape<br> Into the World
+          </h2>
+
+          <p class="header-article__lead">From the coastlines of Europe to remote Kodiak Island, Alaska, here are five of our favorite stories to help you explore the world</p>
+
+          <div class="header-article__footer article-footer">
+            <time class="article-footer__time" datetime="2018-08-06T10:23">
+              <svg aria-hidden="true" focusable="false" width="15" height="15">
+                <use xlink:href="#icon-clock"></use>
+              </svg>
+              <span>Aug 6, 10:23 pm</span>
+            </time>
+            <span class="article-footer__like">
+              <svg aria-hidden="true" focusable="false" width="13" height="13">
+                <use xlink:href="#icon-heart"></use>
+              </svg>
+              <span>830</span>
+            </span>
+            <span class="article-footer__comment">
+              <svg aria-hidden="true" focusable="false" width="15" height="15">
+                <use xlink:href="#icon-comment"></use>
+              </svg>
+              <span class="visually-hidden">comment</span>
+              <span>19</span>
+            </span>
+            <button class="article-footer__button" type="button">
+              <svg aria-hidden="true" focusable="false" width="18" height="12">
+                <use xlink:href="#icon-share"></use>
+              </svg>
+              <span>142 shares</span>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="article-content__grid container container--article">
+        <div class="content-article">
+          <p class="content-text__text">Many geographers are trained in toponymy and cartology, this is not their main preoccupation. Geographers study the space and the temporal database distribution of phenomena, processes, and features as well as the interaction of humans and their environment. Because space and place affect a variety of topics, such as economics, health, climate, plants and animals, geography is highly interdisciplinary. The interdisciplinary nature of the geographical approach depends on an attentiveness to the relationship between physical and human phenomena and its spatial patterns.</p>
+
+          <h3>Integrated Geography</h3>
+
+          <p>Geography as a discipline can be split broadly into two main subsidiary fields: human geography and physical geography. The former largely focuses on the built environment and how humans create, view, manage, and influence space. The latter examines the natural environment, and how organisms, climate, soil, water, and landforms produce and interact.</p>
+
+          <p>The difference between these approaches led to a third field, environmental geography, which combines physical and human geography and concerns the interactions between the environment and humans.</p>
+
+          <p>The accompanying text mentions seven outer regions beyond the encircling ocean. The descriptions of five of them have survived. In contrast to the Imago Mundi, an earlier Babylonian world map dating back to the 9th century BC depicted Babylon as being further north from the center of the world, though it is not certain what that center was supposed to represent.</p>
+        </div>
+
+        <div class="content-aside">
+          <div class="content-aside__item author-aside">
+            <figure class="author-aside__image">
+              <picture>
+                <source type="image/webp" srcset="img/content/avatar-user/avatar-img-anderson@1x.webp 1x, img/content/avatar-user/avatar-img-anderson@2x.webp 2x">
+                <img src="img/content/avatar-user/avatar-img-anderson@1x.jpg" srcset="img/content/avatar-user/avatar-img-anderson@2x.jpg 2x" width="90" height="90" alt="">
+              </picture>
+            </figure>
+
+            <p class="author-aside__user-name"><a href="#!">Mira Anderson</a></p>
+            <p class="author-aside__user-meta">Traveler & Photographer</p>
+            <a class="author-aside__user-article" href="#!"><span>82</span> articles</a>
+
+            <div class="author-aside__user-social user-social">
+              <ul class="user-social__list">
+                <li class="user-social__item">
+                  <a class="user-social__link" href="#!" target="_blank">
+                    <svg class="user-social__icon" aria-hidden="true" focusable="false" width="20" height="20">
+                      <use xlink:href="#icon-facebook"></use>
+                    </svg>
+                    <span class="visually-hidden">facebook</span>
+                  </a>
+                </li>
+                <li class="user-social__item">
+                  <a class="user-social__link" href="#!" target="_blank">
+                    <svg class="user-social__icon" aria-hidden="true" focusable="false" width="20" height="20">
+                      <use xlink:href="#icon-twitter"></use>
+                    </svg>
+                    <span class="visually-hidden">twitter</span>
+                  </a>
+                </li>
+                <li class="user-social__item">
+                  <a class="user-social__link" href="#!" target="_blank">
+                    <svg class="user-social__icon" aria-hidden="true" focusable="false" width="20" height="20">
+                      <use xlink:href="#icon-instagram"></use>
+                    </svg>
+                    <span class="visually-hidden">instagram</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="author-aside__footer">
+              <a class="author-aside__link" href="">Follow on Universal</a>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </article>
   </main>
-  <footer>3</footer>
+
+  <footer class="site-footer">
+    <div class="site-footer__grid container">
+      <form class="site-footer__form footer-form" method="get">
+        <h2 class="visually-hidden">News subscription</h2>
+        <p class="footer-form__grid">
+          <label class="footer-form__label" for="id-subscription-email">Subscribe now and get 20% off</label>
+          <input id="id-subscription-email" class="footer-form__input" type="email" name="subscription-email" placeholder="Enter your email">
+          <button class="footer-form__button" type="button">Subscribe</button>
+        </p>
+      </form>
+
+      <div class="site-footer__navigation footer-nav">
+        <h2 class="visually-hidden">Site navigation</h2>
+        <ul class="footer-nav__list">
+
+          <li class="footer-nav__item">
+            <h3 class="footer-nav__title">News</h3>
+            <ul class="footer-nav__inner-list">
+              <li class="footer-nav__inner-item">
+                <a class="footer-nav__inner-link" href="#!">Nation</a>
+              </li>
+              <li class="footer-nav__inner-item">
+                <a class="footer-nav__inner-link" href="#!">World</a>
+              </li>
+              <li class="footer-nav__inner-item">
+                <a class="footer-nav__inner-link" href="#!">Politics</a>
+              </li>
+              <li class="footer-nav__inner-item">
+                <a class="footer-nav__inner-link" href="#!">Solar Eclipse</a>
+              </li>
+            </ul>
+          </li>
+
+          <li class="footer-nav__item">
+            <h3 class="footer-nav__title">Arts</h3>
+            <ul class="footer-nav__inner-list">
+              <li class="footer-nav__inner-item">
+                <a class="footer-nav__inner-link" href="#!">Art & Design</a>
+              </li>
+              <li class="footer-nav__inner-item">
+                <a class="footer-nav__inner-link" href="#!">Movies</a>
+              </li>
+              <li class="footer-nav__inner-item">
+                <a class="footer-nav__inner-link" href="#!">People</a>
+              </li>
+              <li class="footer-nav__inner-item">
+                <a class="footer-nav__inner-link" href="#!">Video: Arts</a>
+              </li>
+              <li class="footer-nav__inner-item">
+                <a class="footer-nav__inner-link" href="#!">Theater</a>
+              </li>
+            </ul>
+          </li>
+
+          <li class="footer-nav__item">
+            <h3 class="footer-nav__title">Travel</h3>
+            <ul class="footer-nav__inner-list">
+              <li class="footer-nav__inner-item">
+                <a class="footer-nav__inner-link footer-nav__inner-link--current" >Destinations</a>
+              </li>
+              <li class="footer-nav__inner-item">
+                <a class="footer-nav__inner-link" href="#!">Flights</a>
+              </li>
+              <li class="footer-nav__inner-item">
+                <a class="footer-nav__inner-link" href="#!">Business Travel</a>
+              </li>
+            </ul>
+          </li>
+
+          <li class="footer-nav__item">
+            <h3 class="footer-nav__title">Sports</h3>
+            <ul class="footer-nav__inner-list">
+              <li class="footer-nav__inner-item">
+                <a class="footer-nav__inner-link" href="#!">Olympics</a>
+              </li>
+              <li class="footer-nav__inner-item">
+                <a class="footer-nav__inner-link" href="#!">Motor Sports</a>
+              </li>
+              <li class="footer-nav__inner-item">
+                <a class="footer-nav__inner-link" href="#!">Volleyball</a>
+              </li>
+              <li class="footer-nav__inner-item">
+                <a class="footer-nav__inner-link" href="#!">MMA</a>
+              </li>
+              <li class="footer-nav__inner-item">
+                <a class="footer-nav__inner-link" href="#!">Cycling</a>
+              </li>
+            </ul>
+          </li>
+
+          <li class="footer-nav__item">
+            <h3 class="footer-nav__title">Tech</h3>
+            <ul class="footer-nav__inner-list">
+              <li class="footer-nav__inner-item">
+                <a class="footer-nav__inner-link" href="#!">Tech</a>
+              </li>
+              <li class="footer-nav__inner-item">
+                <a class="footer-nav__inner-link" href="#!">Tech Columnists</a>
+              </li>
+              <li class="footer-nav__inner-item">
+                <a class="footer-nav__inner-link" href="#!">Tech Reviews</a>
+              </li>
+              <li class="footer-nav__inner-item">
+                <a class="footer-nav__inner-link" href="#!">Talking Tech</a>
+              </li>
+            </ul>
+          </li>
+
+          <li class="footer-nav__item">
+            <h3 class="footer-nav__title">Moneys</h3>
+            <ul class="footer-nav__inner-list">
+              <li class="footer-nav__inner-item">
+                <a class="footer-nav__inner-link" href="#!">Markets</a>
+              </li>
+              <li class="footer-nav__inner-item">
+                <a class="footer-nav__inner-link" href="#!">Business</a>
+              </li>
+              <li class="footer-nav__inner-item">
+                <a class="footer-nav__inner-link" href="#!">Personal Finance</a>
+              </li>
+              <li class="footer-nav__inner-item">
+                <a class="footer-nav__inner-link" href="#!">Retirement</a>
+              </li>
+              <li class="footer-nav__inner-item">
+                <a class="footer-nav__inner-link" href="#!">Careers</a>
+              </li>
+            </ul>
+          </li>
+
+        </ul>
+
+      </div>
+
+      <div class="site-footer__contact-us contact-us">
+
+        <div class="contact-us__advertise advertise">
+          <a class="advertise__link" href="">
+            <img class="advertise__icon" src="img/footer-logo.svg" width="50" height="50" alt="">
+          </a>
+          <a class="advertise__link" href="">Contact Us</a>
+          <a class="advertise__link" href="">Work with Us</a>
+          <a class="advertise__link" href="">Advertise</a>
+          <a class="advertise__link" href="">Your Ad Choise</a>
+        </div>
+
+        <ul class="contact-us__social social">
+          <li class="social__item">
+            <a class="social__link social__link--fbColor" href="">
+              <span class="visually-hidden">facebook</span>
+              <svg class="social__icon" aria-hidden="true" focusable="false" width="20" height="20">
+                <use xlink:href="#icon-facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--twColor" href="">
+              <span class="visually-hidden">twitter</span>
+              <svg class="social__icon" aria-hidden="true" focusable="false" width="20" height="20">
+                <use xlink:href="#icon-twitter"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--ytbColor" href="">
+              <span class="visually-hidden">youtube</span>
+              <svg class="social__icon" aria-hidden="true" focusable="false" width="20" height="20">
+                <use xlink:href="#icon-youtube"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--instColor" href="">
+              <span class="visually-hidden">instagram</span>
+              <svg class="social__icon" aria-hidden="true" focusable="false" width="20" height="20">
+                <use xlink:href="#icon-instagram"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="site-footer__copyright copyright">
+        <p class="copyright__text">Universal&rsquo;s business concept is to offer fashion and quality at the best price in a sustainable way. Universal has since it was founded in 2015 grown into one of the world's leading fashion companies.</p>
+        <p class="copyright__copy">© 2019 Universal UI Kit</p>
+      </div>
+    </div>
+  </footer>
 </body>
 </html>

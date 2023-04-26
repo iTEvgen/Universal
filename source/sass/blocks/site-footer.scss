@@ -168,6 +168,14 @@
   }
 }
 
+.social__icon {
+  fill: var(--basic-white);
+}
+
+.social__link:hover .social__icon {
+  fill: var(--basic-light-mallow);
+}
+
 //site-footer__copyright
 .site-footer__copyright {
   margin-bottom: 26px;

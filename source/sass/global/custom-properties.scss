@@ -2,6 +2,8 @@
   --transparent: transparent;
   --basic-white: #ffffff;
   --alpha-white: rgba(255, 255, 255, 0.4);
+  --alpha-black: rgba(0, 0, 0, 0.4);
+
   --basic-black: #000000;
   --basic-black--800: #262626;
   --basic-black--700: #30363d;
@@ -24,8 +26,9 @@
   --basic-orange: #eea34d;
   --basic-orange--100: #ffa34d;
   --basic-blue: #4592ff;
-  --basic-blue--600: #4267b2;
+  --basic-blue--50: #1da1f2;
   --basic-blue--100: #1da1d2;
+  --basic-blue--600: #4267b2;
   --basic-blue-frost: #c5e4fc;
   --basic-red: #ff4f52;
   --basic-red-050: #ff0000;

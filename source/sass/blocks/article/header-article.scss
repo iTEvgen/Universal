@@ -136,6 +136,10 @@
   opacity: 0.55;
 }
 
+.article-footer__like {
+  fill: var(--basic-grey--400);
+}
+
 .article-footer__comment {
   svg {
     align-self: flex-end;
